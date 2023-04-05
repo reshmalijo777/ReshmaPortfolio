@@ -1,0 +1,133 @@
+/* universal element selector */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #0a0a09;
+  padding: 0;
+  font-size: 20px;
+}
+
+header{
+width: 100%;
+height: 10vh;
+background: url(../assets/images/tree-field.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin-bottom: 50px;
+}
+h1
+{
+height: 10px;
+display: inline-block;
+text-align: left;
+color: #25edea;
+}
+
+.text-right,a
+{
+margin-right: 15px;
+text-align: right;
+font-size: 20px;
+color: #1dd6e4;
+}
+/* class selector */
+.title {
+  width: 100%;
+  height: 15vh;
+  min-height: 25px;
+  background: rgb(5, 71, 71);
+}
+
+.row{
+  display: -webkit-box; 
+  display: -ms-flexbox;
+  display: flex;
+}
+.float-left {
+  width: 15%;
+  text-align: right;
+  padding: 10px;
+  
+}
+
+.float-right {
+  width: 80%;
+  padding: 10px;
+  border-left: 5px solid rgb(4, 4, 4);
+}
+
+.work{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 800%;
+  min-height: 100px;
+  line-height: 1.2;
+  padding: 1.1em .75em;
+  color: #000;
+  font-family: Arial;
+  text-decoration: none;   
+  background-size: cover; 
+  min-width: 100%;
+}
+.img{
+  padding: 5px;
+  width: 100%;
+  
+}
+
+.img1{
+  background-image: url(../assets/images/images.jpg);
+}
+.img2 {
+  background-image: url(../assets/images/music.jpeg);
+}
+.img3 {
+  background-image: url(../assets/images/read.jpeg);
+}
+.img4{
+  background-image: url(../assets/images/read.jpeg)
+}
+.img5 {
+  background-image: url(../assets/images/music.jpeg)
+}
+
+
+.button:hover{
+  font-size: 25px;
+  color: rgb(174, 96, 7);
+  cursor: grab;
+}
+/* flex item will grow or shrink to fit the space available in its flex container. */
+.footer{
+  display: flex;
+  padding: 5px;
+  color: #25edea;
+  background:rgb(5, 71, 71);
+  justify-content: space-evenly;
+  width: 100%;
+  min-height: 30px;
+  
+}
+/* hover selector selects elements when you move mouse over them */
+p:hover{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  /* on tablets, 50% of the width and not grow */
+  h1 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+   h1{ 
+    max-width: 100%;
+   }
+  
+}
+  
